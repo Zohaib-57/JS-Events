@@ -1,0 +1,3 @@
+function mouseDown(){
+    alert("mouseDown")
+}

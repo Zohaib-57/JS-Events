@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        p{
+            background-color: blueviolet;
+        }
+        .outer{
+            width: 100%;
+            height: 200px;
+            background-color: aqua;
+        }
+        .inner{
+            background-color: black;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- onclick-> When a user click on a element -->
+      <img src="./images/uncle.png" alt="" onclick="alert('hyy how you doing')">
+
+      <!-- oncontextmenu -> when a user right-clicks on element  -->
+       <button oncontextmenu="alert('You just right clicked')">Right Click me</button>
+       
+       <!-- ondbclick -> when user double click on some elements -->
+        <input type="button" value="
+        doubleClick" ondblclick="alert('you double Clikced i poped up')">
+
+        <!-- onmousedown -> when the mouse button is pressed over the element -->
+<p onmousedown="mouseDown()">Press a mouse button: Left or right </p>
+        <!-- onmouseenter -> when the mouse button enter the element -->
+ <p onmouseenter="alert('Inam having the mouse pointer')"><p onmousemove="alert('mouse is moving')"> I trigger when the pointer pooints to me</p>
+</p>
+        <!-- onmouseleave -> the pointer moves out of the element -->
+         <p onmouseleave="alert('bye--best of luck')">BYE</p>
+         <!-- mouse leave works when the mouse is called out of the parents element  -->
+
+        <!-- onmousemove -> the pointer moves over the element -->
+         <p onmousedown="alert('i am moving')">when ever the pointer moves i will show up</p>
+        <!-- onmouseout -> the mouse pointer moves out of an element -->
+         <div class="outer" onmouseout="alert('i am moving out of the parent element')">
+            <div class="inner">
+            </div>
+         </div>
+<!-- mouse out work when it mouse away from the paerents an the child elements  -->
+        <!-- onmouseover -> the pointer moves into in element -->
+<p onmouseover="alert('your pointer is on me')">i am mouse voer</p>
+        <!-- onmouseup -> a mouse pointer is released onto to the element -->
+<p onmouseup="alert('mouse is released on me')"> I am mouse up</p>
+        <script src="script.js"></script>
+</body>
+</html>
