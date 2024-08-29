@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swappiing-images</title>
+    <style>
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Images Gallery</h1>
+        <img src="./images/street-2.jpg" alt="" onclick="swapImage('./images/street-2.jpg')">
+        <img src="./images/street-3.jpg" alt="" onclick="swapImage('./images/street-3.jpg')">
+        <img src="./images/street-5.jpg" alt="" onclick="swapImage('./images/street-5.jpg')">
+        <div>
+            <p>Selected image</p>
+            <img src="./images/street-2.jpg" alt="" id="selected-img">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
