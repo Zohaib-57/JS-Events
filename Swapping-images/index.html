@@ -13,16 +13,22 @@ body{
 img{
     width: 200px;
     height: 200px;
+    margin: 20px;
+    cursor: pointer;
+}
+.active{
+border: 2px solid red;
+transition: border 0.3s;
 }
 
     </style>
 </head>
 <body>
-    <div>
+    <div class="gallery">
         <h1>Images Gallery</h1>
-        <img src="./images/street-2.jpg" alt="" onclick="swapImage('./images/street-2.jpg')">
-        <img src="./images/street-3.jpg" alt="" onclick="swapImage('./images/street-3.jpg')">
-        <img src="./images/street-5.jpg" alt="" onclick="swapImage('./images/street-5.jpg')">
+        <img src="./images/street-2.jpg" alt="" onclick="swapImage('./images/street-2.jpg',this)">
+        <img src="./images/street-3.jpg" alt="" onclick="swapImage('./images/street-3.jpg',this)">
+        <img src="./images/street-5.jpg" alt="" onclick="swapImage('./images/street-5.jpg',this)">
         <div>
             <p>Selected image</p>
             <img src="./images/street-2.jpg" alt="" id="selected-img">
